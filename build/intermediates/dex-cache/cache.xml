@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/7cb0559840ac1fa672e0ea25ad0592274b15c2f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8c8243677105d9c78cfbf553b55e256b3d4bea39">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab5c75efab2c68c7c7253475f8515190dbadab29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/5822e139c92983985c389e75e19f361514804b30/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="823bcb877cb90eb4ecbbc050d822ff5d84bb2db2">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_62c79b78b4fdc08a817f510f35198c4127fed2e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6b262da268f8ad9eff941b25503a9198f0a0ac93">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-api-1.7.5_f6f282e4932182f8a74cb72366ca940f61dcb6da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/a3f41086a3b14604b0ea23a15758d2a9d571817c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5b9f57b1fb76487516b73b908f54c60c48202d84">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_292acba9ac435e051887e6aed90ec1e089bf6ddd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.9.0_74782968743c12f633390f69527ccd1d2926895b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/seamless-util-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="989fb6690245740d76ed08634c04610f52ca1e2a">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/seamless-util-1.1.1_ee7883221db37056931c6537c885dd39e6b47a5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_a7b7aa8901fd9e1eac9c7d07a5863228b897d34e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5fe28b9518e58819180a43a850fbc0dd24b7c050">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-lang3-3.4_857fe48f2cc2e16f6975a2b815efe1dfcf01b8f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/0d16346bebb83a79e78cb7e1257832ff5932ebb2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="271275c6debf84d005912259a77e9c9d0eb2f13a">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9fbbdeac7a28cb2f8a7a8bee8a26f531e3c7c39b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/342f9d445da5a2201f51534755f23f38087d02ea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_34cd9ebffc58f1e36d2ad55fad990b69b220707b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/9d4b1dfa457af154378e98690dcf8ed66af236c4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af171b7137f78a2c3062cb23e3535a0697d75c32">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f56fa107246e306749fe58b4fdfa24f923cc5a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/8.1.12.v20130726/9ff9b1c4c27d76888d01447d9341fb95869271c1/jetty-client-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ff9b1c4c27d76888d01447d9341fb95869271c1">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-client-8.1.12.v20130726_b01bcbfd92796f8cd3758524ffc25454c5f81fdf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/seamless-xml-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ddc628b23904faf124b84f768e9caa03147da5ab">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/seamless-xml-1.1.1_1021a05225c214bdd4dcb7e5211c154d9df39a1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/36f90120f0f1b6e7c44c746bdebd75c70db97da6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95373ed729c03b988eb4488d9758287e1ea5d21e">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_31f727966693ded9d489d163912b6c13df27c8ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_1f185bbd6bdf999a80bebe904db1aa66796f8a92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.3.2/e1ab374265a269314babb1e8e9e96452cf68b481/aws-android-sdk-core-2.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e1ab374265a269314babb1e8e9e96452cf68b481">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-core-2.3.2_b4fc9a46e694f04c7d4011bcae34cac28bce6dbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_304bb9e5703211f68c52d1fb7e72673346870d62/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/8.1.12.v20130726/255cb3b9a415146252796915d8dc3c3745ff1eb6/jetty-util-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="255cb3b9a415146252796915d8dc3c3745ff1eb6">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-util-8.1.12.v20130726_efc624caa3981c09619f0a1f2444c157e3297dc5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/8.1.12.v20130726/859ad5da478e34bca888812a81e12cd4dcdef6fd/jetty-io-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="859ad5da478e34bca888812a81e12cd4dcdef6fd">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-io-8.1.12.v20130726_e6864e70868933dad14c14020230e1e6728542bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/8.1.12.v20130726/3e5ba848730a8ca6dc7ee562ebafbb44f49d8abd/jetty-security-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3e5ba848730a8ca6dc7ee562ebafbb44f49d8abd">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-security-8.1.12.v20130726_621b7b66a929f1589e93332e78587da371baf056/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/cling-core-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e8dfc853359d7b582f2837996ce6c81546a31150">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/cling-core-2.1.1_6ffeaa6aefb96aa9c53c2a888ac0ade2b5f58499/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.6.0/212387a39088ecd3daff8e3bfc3bdc4123e33c67/okhttp-2.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.6.0_bcfdfa146a8b2e48f02ab255a123cebbc0c10f0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/4b25610e3a9369c69bc5d81274aa283316c04947/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6db4f99f250438239ec56f9581ee6551f636ded/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-jdk14/1.7.5/33cf4abac351aa45dd130d31a1e7e33fbbba4762/slf4j-jdk14-1.7.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="33cf4abac351aa45dd130d31a1e7e33fbbba4762">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-jdk14-1.7.5_0822da41061fda424b627d3bd6e8b3153a4d9cef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/062286cd23030728bd6edf0bc892f3ec850e761c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="25cdd380f0a1b2f67a0b7253bbf1f343df981e5e">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c905976830dd50a3ce01af9e4edd944041cc427b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-ddb-mapper/2.2.22/57538cc0c8d6f9279d94aa347fb1a90f68592719/aws-android-sdk-ddb-mapper-2.2.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="57538cc0c8d6f9279d94aa347fb1a90f68592719">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-ddb-mapper-2.2.22_aec8a0aa6f45152995cbc0096c7acc3a09e70688/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/netty-all-5.0.0.Alpha2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09870d1ff5e71352077776a255f9d1494486af16">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/netty-all-5.0.0.Alpha2_a2fb0a8cdbdbc2308073c43e39b1b09b81178585/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/seamless-http-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="18cc72baf8fbb8f85993dfc4e252c5b6b8cc0139">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/seamless-http-1.1.1_74201870ed82d6d74569c3191a36c97370f62848/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_556f88c518e6215dd14f7bbe14b7fab24919151b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognitoidentityprovider/2.3.2/a0f7bb46189be243f3e7a34634bbd9c26baec10/aws-android-sdk-cognitoidentityprovider-2.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0a0f7bb46189be243f3e7a34634bbd9c26baec10">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-cognitoidentityprovider-2.3.2_98f8730cf6d9bf819712415bfc487da4630e2822/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_0b853539124c12b03e660778f068bd24d38dfdc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/logging-interceptor/2.6.0/77dc6e1eedd47953b41ef936f20b9b693fe73f6f/logging-interceptor-2.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="77dc6e1eedd47953b41ef936f20b9b693fe73f6f">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-2.6.0_082608a0946b4b6795db59776703f2b8a8b4be61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.squareup/otto/1.3.8/cf615176cd1177edf71d3c9605f8dc148fede6be/otto-1.3.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/otto-1.3.8_b0c4b3a01d1727f95951fefb99cc31e361f639a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-s3/2.2.22/40fe82092e0ae3ca549b132a1e7e876807525176/aws-android-sdk-s3-2.2.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="40fe82092e0ae3ca549b132a1e7e876807525176">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-s3-2.2.22_cbb6b18d38f025a6f225a72864c525b94ab32a9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/a889ffe96e7eb8a1df5a94c0bf06c6c3ba3e7e98/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9d0ff1960f148dafff5b945e8596c060ff3cf88e">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_65968e2fcf00e4dec2bd78cae9442fa02b9432a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/cling-support-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1c547805c3a9bdd7ae4e32ca98b8467a211d70b0">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/cling-support-2.1.1_d1888b270155131064ccda958efb6817e76a4dd0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/a49604d0aa44bc11ee7c2d692b206ec2c24334cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="263c1c941f603469ecbaf8745f7b2d18ae85c5c0">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f6cfc1024c636b0c1a9744b20e1116d67c5a85a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/3631dbaf56879e7459f544eb227db5a44c653537/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dc485c41933fad5144a49a126faf31fff4a50193">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_278c301b986e66b1ee31ff2459bb884751325afd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/login-with-amazon-sdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7d465d3d897dc48a5c95f2a489bf0ec5ef937cc4">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/login-with-amazon-sdk_63c100122f67568a6cf2f95047cc31261f7439ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/8.1.12.v20130726/530b3a21d71ac69279bee129869d7eac031e3533/jetty-http-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="530b3a21d71ac69279bee129869d7eac031e3533">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-http-8.1.12.v20130726_4b483d6fcca3fcd38e5758602f22d6a59819032c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/0d853b004986493a452135f8fefc8eabf8e81885/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="844efef744581e604ea77683555271ebbd61d871">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1aec48c4afb6ccdd92e04f9a4950eb941a0eff68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/087f44df17a7a0d6bb0cbb0d2ba5a4ae466be03a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6468d22c421811687c24b674216ec111009a6d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/libs/netty.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="74183fed9f1b73f36de2be0d0c8e2761b6b0c8ba">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/2/netty_98db7f15b0d8495a700915bd120f39e9962b5481/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/8.1.12.v20130726/56983c28a934cb2b8cdfcf3a3fa9b28320f7ac7d/jetty-continuation-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="56983c28a934cb2b8cdfcf3a3fa9b28320f7ac7d">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-continuation-8.1.12.v20130726_08544a4c9b4ee8fcbe9eac7a294658b27fe1e8db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/caad3af586f7f2a9c065b633ee65d240482b8dd6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5c812ad0773ab307151802099a33575fa7bb270b">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_397e608333cb032fa3ae0294c6744d5a28179ab1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-ddb/2.2.22/a1e0dd0d91d40d9e67342d3a8bd26f08edaa3549/aws-android-sdk-ddb-2.2.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a1e0dd0d91d40d9e67342d3a8bd26f08edaa3549">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-ddb-2.2.22_ff51a96fd136ce4df32a68525d7bc62e9c929547/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/a3e229a188860307849a28c580f6dee43af5d3f1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3fc468ff4de5f9aa195d8749f2166c2f32f0cdf">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0970517f6d5bda309d4019ce2c3eee913b5fd00a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.android/build-cache/b674df76cf930ea450f6dd3c6e0046900da85ffe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fb547fa3f568838f4e86e7e1a2d1dd7696fc86cf">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9372258309350a86e57731f1c613838108a4e743/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/8.1.12.v20130726/e8d89c85edd00680a7b30bf219e6dba181dc4aa1/jetty-server-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e8d89c85edd00680a7b30bf219e6dba181dc4aa1">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-server-8.1.12.v20130726_c245621ff1b35d3076b6b11da43edcbf1c97f8af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_f9895f00134364899c0f1d2f27de92b62787343d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/8.1.12.v20130726/c0a4cba995dcb585a89c524c16370eb9c393f582/jetty-servlet-8.1.12.v20130726.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c0a4cba995dcb585a89c524c16370eb9c393f582">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/jetty-servlet-8.1.12.v20130726_ed74bfa183d2453ac8418effd74fca22acf18117/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet/3.0.0.v201112011016/aaaa85845fb5c59da00193f06b8e5278d8bf3f8/javax.servlet-3.0.0.v201112011016.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0aaaa85845fb5c59da00193f06b8e5278d8bf3f8">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.servlet-3.0.0.v201112011016_5dcf81c8f0847c973d0e0e778a553d15334ae593/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/atulkaushik/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/Users/atulkaushik/Desktop/libre@work/Latest_Libre_Alexa_0.020_Vox/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.8.1_6bba80738ec6844f97f9131b4b676ee23da5d230/classes.dex" />
+    </item>
+
+</items>

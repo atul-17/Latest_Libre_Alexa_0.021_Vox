@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_custom_white_bg"
+        android:id="@+id/toolbar"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/grey_100"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/tvAlexaLinkMessage"
+        android:text="@string/alexa_link_message"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/alexa_blue_white_100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvAlexaLinkMessage"
+        android:id="@+id/ivAlexaSignInLogo"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tvAlexaAllowMsg"
+        android:layout_above="@+id/btnAllow"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/alexa_allow_msg"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_red_button_enabled"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnAllow"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Allow"
+        android:textAllCaps="false"
+        android:layout_above="@+id/btnNowNow"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_red_rounded_border_button"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/btnNowNow"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/brand_red"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="Not now"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:minWidth="250dp"
+            android:max="100"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppTheme.RedAccent"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:progress="1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

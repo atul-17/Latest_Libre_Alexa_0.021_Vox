@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Latest_Libre_Alexa_0.021_Vox.iml" filepath="$PROJECT_DIR$/Latest_Libre_Alexa_0.021_Vox.iml" group="Latest_Libre_Alexa_0.021_Vox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idtmlib/idtmlib.iml" filepath="$PROJECT_DIR$/.idea/modules/idtmlib/idtmlib.iml" group="Latest_Libre_Alexa_0.021_Vox/libresdk/idtmlib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idtmlib-release-v1.0.23/idtmlib-release-v1.0.23.iml" filepath="$PROJECT_DIR$/.idea/modules/idtmlib-release-v1.0.23/idtmlib-release-v1.0.23.iml" group="Latest_Libre_Alexa_0.021_Vox/idtmlib-release-v1.0.23" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idtmlib-release-v1.0.24/idtmlib-release-v1.0.24.iml" filepath="$PROJECT_DIR$/.idea/modules/idtmlib-release-v1.0.24/idtmlib-release-v1.0.24.iml" group="Latest_Libre_Alexa_0.021_Vox/idtmlib-release-v1.0.24" />
+      <module fileurl="file://$PROJECT_DIR$/libresdk/libresdk.iml" filepath="$PROJECT_DIR$/libresdk/libresdk.iml" group="Latest_Libre_Alexa_0.021_Vox/libresdk" />
+    </modules>
+  </component>
+</project>

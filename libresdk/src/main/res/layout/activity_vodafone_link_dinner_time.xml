@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_custom_blue_bg"
+        android:id="@+id/toolbar"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/llVodafoneAlexa"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/vodafone_logo"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_green_dot"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_green_dot"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_link_grey"
+                android:rotation="133"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_green_dot"
+                android:layout_gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_green_dot"
+                android:layout_gravity="center"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/alexa_blue_white_100px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_below="@+id/llVodafoneAlexa"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="45dp"
+                android:textAllCaps="false"
+                android:id="@+id/tvLinkDinnerTImeAlexa"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Link  Dinner  Time  \nwith Alexa"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_below="@+id/tvLinkDinnerTImeAlexa"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/tvAlexaLinkMessage"
+                android:text="@string/enable_dinner_time"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_below="@+id/tvAlexaLinkMessage"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/tvUnLinkAlexaMessage"
+                android:text="@string/unlink_alexa_account"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:weightSum="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Cancel"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_rounded_grey"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Link"
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/btnLink"
+                    android:background="@drawable/button_rounded_blue_bg"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>

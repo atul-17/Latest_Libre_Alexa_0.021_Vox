@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100">
+
+
+    <include layout="@layout/toolbar_custom_white_bg"
+        android:id="@+id/toolbar"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/grey_100"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:textAllCaps="false"
+        android:id="@+id/tvLinkDinnerTImeAlexa"
+        android:fontFamily="@font/vodafone_font_bold"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Congratulations !"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/vodafone_regular"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/genie_account_linked"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/ic_vodafone_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/vodafone_regular"
+        android:text="@string/control_internet_by_voice"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/alexa_blue_white_100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/vodafone_regular"
+        android:text="@string/setup_family_routine"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_red_button_enabled"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnNext"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/vodafone_regular"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_above="@+id/btnNowNow"
+        />
+
+</LinearLayout>

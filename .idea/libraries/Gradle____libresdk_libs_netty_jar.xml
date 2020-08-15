@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libresdk/libs/netty.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libresdk/libs/netty.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

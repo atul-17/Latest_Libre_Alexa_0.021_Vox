@@ -1,0 +1,3 @@
+include ':libresdk:idtmlib'
+include ':libresdk'
+rootProject.name = "Latest_Libre_Alexa_0.021_Vox"
