@@ -40,6 +40,8 @@ class VodafoneThingsToTryActivity : DeviceDiscoveryActivity(), LibreDeviceIntera
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vodafone_things_to_try_activity)
 
+        disableNetworkChangeCallBack()
+
         registerForDeviceEvents(this)
 
         bundle = intent.extras!!
@@ -79,6 +81,11 @@ class VodafoneThingsToTryActivity : DeviceDiscoveryActivity(), LibreDeviceIntera
         progressDialog?.setMessage("Please Wait...")
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(0,
+                R.anim.right_to_left_anim_transition);
+    }
 
     fun sendSignOutCommandToDevice() {
         val luciControl = LUCIControl(node?.ip)
@@ -159,6 +166,8 @@ class VodafoneThingsToTryActivity : DeviceDiscoveryActivity(), LibreDeviceIntera
         intent.putExtras(bundle)
         startActivity(intent)
         finish()
+        overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                R.anim.right_to_left_anim_transition);
     }
 
     fun updateAlexaEnablementStatus(status: Boolean) {

@@ -35,6 +35,8 @@ class VodafoneAlexaDinnerTimeSettingsActivity : DeviceDiscoveryActivity(), Libre
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vodafone_alexa_dinner_time_settings)
 
+        disableNetworkChangeCallBack()
+
         bundle = intent.extras!!
         if (bundle != null) {
             node = bundle.getSerializable("deviceDetails") as LSSDPNodes
@@ -85,6 +87,12 @@ class VodafoneAlexaDinnerTimeSettingsActivity : DeviceDiscoveryActivity(), Libre
             return macAddressString!!.replace("..(?!$)", "$0:")
         }
         return ""
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(0,
+                R.anim.right_to_left_anim_transition);
     }
 
     fun showLoader() {

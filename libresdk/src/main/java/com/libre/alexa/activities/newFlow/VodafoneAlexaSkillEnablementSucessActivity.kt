@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
+import com.airbnb.lottie.LottieDrawable
 import com.libre.alexa.DeviceDiscoveryActivity
 import com.libre.alexa.LibreApplication
 import com.libre.alexa.R
@@ -42,7 +43,6 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
 
     val utilClass = UtilClass()
 
-    var progressDialog: ProgressDialog? = null
 
     var deviceIpAddress: String = ""
 
@@ -52,6 +52,8 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alexa_skill_enablement_success)
+
+        disableNetworkChangeCallBack()
 
         apiViewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory(application)).get(
                 ApisViewModel::class.java)
@@ -76,20 +78,27 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
             gotoSayHelloFamilyRoutinesScreen()
         }
 
-        createNewProgressDialog()
 
-        showLoader()
+        showLotteAnimationView()
         AuthenticateThread().start()
 
     }
 
 
-    fun showLoader() {
-        progressDialog?.show()
+    fun showLotteAnimationView() {
+        if (lotteAnimationViewSkillActivity != null) {
+            lotteAnimationViewSkillActivity.setAnimation("vf_spinner_red_large_300.json")
+            lotteAnimationViewSkillActivity.repeatCount = LottieDrawable.INFINITE
+            lotteAnimationViewSkillActivity.tag = "lotteAnimation"
+            lotteAnimationViewSkillActivity.playAnimation()
+        }
     }
 
-    fun dismissLoader() {
-        progressDialog?.dismiss()
+    fun stopLotteAnimationView() {
+        if (lotteAnimationViewSkillActivity != null) {
+            lotteAnimationViewSkillActivity.clearAnimation();
+            lotteAnimationViewSkillActivity.visibility = View.GONE
+        }
     }
 
 
@@ -98,11 +107,6 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
         registerForDeviceEvents(this)
     }
 
-    fun createNewProgressDialog() {
-        progressDialog = ProgressDialog(this@VodafoneAlexaSkillEnablementSucessActivity)
-        progressDialog?.setCancelable(false)
-        progressDialog?.setMessage("Please Wait...")
-    }
 
     private inner class AuthenticateThread : Thread() {
         override fun run() {
@@ -124,7 +128,7 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
                 getShareCode()
 
             } catch (e: Exception) {
-                progressDialog?.dismiss()
+                stopLotteAnimationView()
                 Log.d(TAG, "authenticate sync onError", e)
                 runOnUiThread(Runnable {
                     Log.d(TAG, "Access token error: $e")
@@ -142,12 +146,8 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
         ).getString("accessToken", ""),
                 this@VodafoneAlexaSkillEnablementSucessActivity,
                 object : ApiSucessCallbackInterface {
-                    override fun onApiSucess() {
-                        getAlexaAuthCode()
-                    }
-
                     override fun onApiSucess(isSucess: Boolean) {
-                        TODO("Not yet implemented")
+                        getAlexaAuthCode()
                     }
                 })
     }
@@ -228,11 +228,15 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
 
                 when (payload) {
                     "ENABLE_SUCCESS" -> {
-                        dismissLoader()
-                        /** The skill is enabled sucessfully goto the dinner time devices */
+                       runOnUiThread {
+                           stopLotteAnimationView()
+                           llCongrats.visibility = View.VISIBLE
+                           /** The skill is enabled sucessfully goto the dinner time devices */
+
+                           utilClass.buildSnackBarWithoutButton(this@VodafoneAlexaSkillEnablementSucessActivity,
+                                   window.decorView.findViewById(android.R.id.content), "Alexa Skill is successfully enabled")
+                       }
                         updateAlexaEnablementStatus(true)
-                        utilClass.buildSnackBarWithoutButton(this@VodafoneAlexaSkillEnablementSucessActivity,
-                                window.decorView.findViewById(android.R.id.content), "Alexa Skill is successfully enabled")
                     }
 
                     "ENABLE_RETRY" -> {
@@ -240,9 +244,12 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
                     }
 
                     "ENABLE_ERROR" -> {
-                        utilClass.buildSnackBarWithoutButton(this, window.decorView.findViewById(android.R.id.content),
-                                "There seems to be an error while enabling the alexa Skill")
-                        dismissLoader()
+                        runOnUiThread {
+                            utilClass.buildSnackBarWithoutButton(this, window.decorView.findViewById(android.R.id.content),
+                                    "There seems to be an error while enabling the alexa Skill")
+                            stopLotteAnimationView()
+                            llCongrats.visibility = View.VISIBLE
+                        }
                         updateAlexaEnablementStatus(false)
 
                     }
@@ -276,6 +283,9 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
     }
 
     fun gotoSayHelloFamilyRoutinesScreen() {
+        if (VodafoneDinnerTimePairedActivity.vodafoneDinnerTimePairedActivity != null) {
+            VodafoneDinnerTimePairedActivity.vodafoneDinnerTimePairedActivity?.finish()
+        }
         val intent = Intent(
                 this@VodafoneAlexaSkillEnablementSucessActivity,
                 VodafoneHelloFamilyRoutinesActivity::class.java
@@ -284,6 +294,9 @@ class VodafoneAlexaSkillEnablementSucessActivity : DeviceDiscoveryActivity(),
         bundle.putSerializable("deviceDetails", node)
         intent.putExtras(bundle)
         startActivity(intent)
+        finish()
+        overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                R.anim.right_to_left_anim_transition);
     }
 
 

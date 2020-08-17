@@ -22,8 +22,16 @@ class VodafoneHelloFamilyRoutinesActivity : AppCompatActivity() {
 
     var node: LSSDPNodes? = null
 
+    companion object {
+        var vodafoneHelloFamilyRoutinesActivity: VodafoneHelloFamilyRoutinesActivity? = null
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        vodafoneHelloFamilyRoutinesActivity = this
+
+
         setContentView(R.layout.activity_vodafone_hello_family_routines)
 
         bundle = intent.extras!!
@@ -47,6 +55,15 @@ class VodafoneHelloFamilyRoutinesActivity : AppCompatActivity() {
             bundle.putSerializable("deviceDetails", node)
             intent.putExtras(bundle)
             startActivity(intent)
+            overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                    R.anim.right_to_left_anim_transition);
         }
     }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        vodafoneHelloFamilyRoutinesActivity = null
+    }
+
 }

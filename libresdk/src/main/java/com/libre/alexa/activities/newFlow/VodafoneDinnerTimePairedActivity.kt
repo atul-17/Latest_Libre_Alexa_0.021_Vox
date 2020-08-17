@@ -30,7 +30,6 @@ import com.libre.alexa.utils.UtilClass
 import kotlinx.android.synthetic.main.activity_vodafone_dinner_time_paired.*
 import org.json.JSONException
 import org.json.JSONObject
-import java.lang.Exception
 
 class VodafoneDinnerTimePairedActivity : DeviceDiscoveryActivity(), LibreDeviceInteractionListner {
 
@@ -68,6 +67,11 @@ class VodafoneDinnerTimePairedActivity : DeviceDiscoveryActivity(), LibreDeviceI
 
     private lateinit var requestContext: RequestContext
 
+    companion object {
+        var vodafoneDinnerTimePairedActivity: VodafoneDinnerTimePairedActivity? = null
+
+    }
+
 
     private val handler: Handler = object : Handler() {
         override fun handleMessage(msg: Message) {
@@ -82,11 +86,15 @@ class VodafoneDinnerTimePairedActivity : DeviceDiscoveryActivity(), LibreDeviceI
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        vodafoneDinnerTimePairedActivity = this
+
         requestContext = RequestContext.create(this@VodafoneDinnerTimePairedActivity)
 
         requestContext.registerListener(AuthListener())
 
         setContentView(R.layout.activity_vodafone_dinner_time_paired)
+
+        disableNetworkChangeCallBack()
 
         bundle = intent.extras!!
 
@@ -234,6 +242,10 @@ class VodafoneDinnerTimePairedActivity : DeviceDiscoveryActivity(), LibreDeviceI
         progressDialog?.dismiss()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        vodafoneDinnerTimePairedActivity = null
+    }
 
     override fun newDeviceFound(node: LSSDPNodes?) {
 
@@ -327,6 +339,8 @@ class VodafoneDinnerTimePairedActivity : DeviceDiscoveryActivity(), LibreDeviceI
         bundle.putSerializable("deviceDetails", nodes)
         intent.putExtras(bundle)
         startActivity(intent)
+        overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                R.anim.right_to_left_anim_transition);
     }
 
     override fun deviceDiscoveryAfterClearingTheCacheStarted() {

@@ -1,11 +1,14 @@
 package com.libre.alexa.activities.newFlow
 
+import android.app.AlertDialog
 import android.app.Dialog
 import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.view.Window
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
@@ -62,14 +65,13 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
 
     var dinnerTimeStatus: Int = 0
 
-    private var customTwoAlertDialog: Dialog? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_devices_for_dinner_time)
 
+        disableNetworkChangeCallBack()
         bundle = intent.extras!!
         if (bundle != null) {
             node = bundle.getSerializable("deviceDetails") as LSSDPNodes
@@ -93,6 +95,8 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
             bundle.putSerializable("deviceDetails", node)
             intent.putExtras(bundle)
             startActivity(intent)
+            overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                    R.anim.right_to_left_anim_transition);
         }
 
         ivAppSettings.setOnClickListener {
@@ -105,6 +109,8 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
             bundle.putSerializable("deviceDetails", node)
             intent.putExtras(bundle)
             startActivity(intent)
+            overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                    R.anim.right_to_left_anim_transition);
         }
 
 
@@ -177,10 +183,10 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
         val packet = LUCIPacket(dataRecived?.getMessage())
         val voxPayload = String(packet.getpayload())
         Log.d(TAG, "19 msg\n$voxPayload")
-        dismissLoader()
         when (packet.command) {
             /** this receives the dinner time device list*/
-            19 -> if (voxPayload.contains("1::")) {
+            19
+            -> if (voxPayload.contains("1::")) {
                 node?.voxJsonArray = voxPayload
                 modelStoreDeviceDetailsList = getDinnerTimeDevicesList(node)
 
@@ -193,8 +199,12 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
                 })
                 addBlackListedDeviceToPostArrayList(modelStoreDeviceDetailsList);
                 setDinnerTimeDeviceAdapter(modelStoreDeviceDetailsList)
+                runOnUiThread {
+                    dismissLoader()
+                }
             }
             21 -> {
+
                 /** this data shows the timer for dinner time active */
                 if (voxPayload.isNotEmpty()) {
                     val seconds = voxPayload.toInt()
@@ -367,41 +377,53 @@ class VodafoneAlexaDinnerTimeDeviceListActivity : DeviceDiscoveryActivity(),
     fun showSucessFullMsg(title: String, message: String) {
         //Are you sure save the changes
         if (!isFinishing) {
+            val builder: AlertDialog.Builder =
+                    AlertDialog.Builder(this@VodafoneAlexaDinnerTimeDeviceListActivity, R.style.CustomAlertDialog)
 
-            customTwoAlertDialog = Dialog(this@VodafoneAlexaDinnerTimeDeviceListActivity)
+            val viewGroup: ViewGroup = findViewById(android.R.id.content)
 
-            customTwoAlertDialog!!.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            val dialogView: View =
+                    LayoutInflater.from(this@VodafoneAlexaDinnerTimeDeviceListActivity)
+                            .inflate(R.layout.custom_confirm_alert, viewGroup, false)
 
-            customTwoAlertDialog?.setContentView(R.layout.custom_confirm_alert)
+            builder.setView(dialogView);
 
-            customTwoAlertDialog!!.setCancelable(false)
+            builder.setCancelable(false)
+
+            val alertDialog: AlertDialog = builder.create()
+
 
             val tvAlertTitle: AppCompatTextView =
-                    customTwoAlertDialog!!.findViewById(R.id.tv_alert_title)
+                    dialogView!!.findViewById(com.libre.alexa.R.id.tv_alert_title)
 
             val tvAlertMessage: AppCompatTextView =
-                    customTwoAlertDialog!!.findViewById(R.id.tv_alert_message)
+                    dialogView!!.findViewById(com.libre.alexa.R.id.tv_alert_message)
 
-            val btnOK: AppCompatButton = customTwoAlertDialog!!.findViewById(R.id.btn_ok)
+            val btnOK: AppCompatButton =
+                    dialogView!!.findViewById(com.libre.alexa.R.id.btn_ok)
 
-            val btnCancel: AppCompatButton = customTwoAlertDialog!!.findViewById(R.id.btn_cancel)
+            val btnCancel: AppCompatButton =
+                    dialogView!!.findViewById(com.libre.alexa.R.id.btn_cancel)
+
 
             tvAlertTitle.text = title
-
             tvAlertMessage.text = message
 
 
             btnOK.setOnClickListener(View.OnClickListener {
-                makeJsonForPostingTheDevice()
-                customTwoAlertDialog!!.dismiss()
+                alertDialog!!.dismiss()
+                val intent =
+                        Intent(this@VodafoneAlexaDinnerTimeDeviceListActivity, VodafoneLoginRegisterWebViewActivity::class.java)
+                startActivity(intent)
+                finish()
             })
 
             btnCancel.setOnClickListener(View.OnClickListener {
 
-                customTwoAlertDialog!!.dismiss()
+                alertDialog!!.dismiss()
             })
 
-            customTwoAlertDialog!!.show()
+            alertDialog!!.show()
 
         }
     }

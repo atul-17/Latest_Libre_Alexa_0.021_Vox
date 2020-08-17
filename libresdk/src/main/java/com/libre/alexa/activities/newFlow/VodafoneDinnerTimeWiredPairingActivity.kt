@@ -36,6 +36,8 @@ class VodafoneDinnerTimeWiredPairingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vodafone_dinner_time_wired_pairing)
+
+
         bundle = intent.extras!!
         if (bundle != null) {
             node = bundle.getSerializable("deviceDetails") as LSSDPNodes
@@ -105,6 +107,8 @@ class VodafoneDinnerTimeWiredPairingActivity : AppCompatActivity() {
         intent.putExtras(bundle)
         startActivity(intent)
         finish()
+        overridePendingTransition(R.anim.left_to_right_anim_tranistion,
+                R.anim.right_to_left_anim_transition);
     }
 
     override fun onStart() {
